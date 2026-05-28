@@ -23,7 +23,7 @@ import Contacto    from "../pages/Contacto";
  */
 function AppRoutes() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/YamahaPaginaSocorro">
       <Routes>
         {/* Ruta padre: aplica MainLayout a todas las páginas hijas */}
         <Route element={<MainLayout />}>
