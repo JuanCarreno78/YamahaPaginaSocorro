@@ -74,6 +74,10 @@ function BannerPrincipal({ moto }) {
   const { nombre, categoria, banner, imagen } = moto;
   const [src, setSrc]         = useState(banner);
   const [fallback, setFallback] = useState(false);
+  useEffect(() => {
+    setSrc(banner);
+    setFallback(false);
+  }, [banner, imagen]);
 
   const handleError = () => {
     if (src === banner && banner !== imagen) {
@@ -94,7 +98,7 @@ function BannerPrincipal({ moto }) {
         <img
           src={src}
           alt={`Yamaha ${nombre}`}
-          className="absolute inset-0 w-full h-full object-cover object-center"
+          className="absolute inset-0 w-full h-full object-contain md:object-cover object-center bg-yamaha-black"
           loading="eager"
           onError={handleError}
         />
@@ -148,7 +152,7 @@ function BannerPrincipal({ moto }) {
       </div>
 
       {/* Espaciador — da altura al section */}
-      <div style={{ minHeight: "clamp(400px, 78vh, 900px)" }} />
+      <div style={{ minHeight: "clamp(320px, 68vh, 900px)" }} />
     </section>
   );
 }
