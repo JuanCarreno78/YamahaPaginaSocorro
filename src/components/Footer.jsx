@@ -100,7 +100,7 @@ export default function Footer() {
             <NavLink to="/" className="flex items-center w-fit" aria-label="Inicio">
               <div className="bg-white rounded-xl px-3 py-2 flex items-center shadow-sm">
                 <img
-                  src="/images/icons/MotosDelSocorroLogoHD.png"
+                  src={`${import.meta.env.BASE_URL}images/icons/MotosDelSocorroLogoHD.png`}
                   alt="Motos del Socorro"
                   className="h-8 w-auto object-contain"
                   loading="lazy"

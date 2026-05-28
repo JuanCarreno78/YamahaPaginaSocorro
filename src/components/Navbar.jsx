@@ -108,7 +108,7 @@ function Logo() {
       <div className="bg-white rounded-xl px-3 py-1.5 flex items-center
                       shadow-sm hover:shadow-md transition-shadow duration-200">
         <img
-          src="/images/icons/MotosDelSocorroLogoHD.png"
+          src={`${import.meta.env.BASE_URL}images/icons/MotosDelSocorroLogoHD.png`}
           alt="Motos del Socorro"
           className="h-8 sm:h-9 w-auto object-contain"
           loading="eager"

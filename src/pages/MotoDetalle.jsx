@@ -162,14 +162,14 @@ function BannerPrincipal({ moto }) {
 
 /* Mapa slug → archivo de ícono oficial */
 const ICON_FILES = {
-  "blue-core":  "/images/icons/blue-core.svg",
-  "fi":         "/images/icons/fi.svg",
-  "abs":        "/images/icons/abs.svg",
-  "smart-key":  "/images/icons/smart-key.svg",
-  "y-connect":  "/images/icons/y-connect.png",
-  "asc":        "/images/icons/asc.svg",
-  "aho":        "/images/icons/aho.svg",
-  "full-led":   "/images/icons/aho.svg",   // AHO ≈ Full LED (iluminación automática)
+  "blue-core": `${import.meta.env.BASE_URL}images/icons/blue-core.svg`,
+  "fi": `${import.meta.env.BASE_URL}images/icons/fi.svg`,
+  "abs": `${import.meta.env.BASE_URL}images/icons/abs.svg`,
+  "smart-key": `${import.meta.env.BASE_URL}images/icons/smart-key.svg`,
+  "y-connect": `${import.meta.env.BASE_URL}images/icons/y-connect.png`,
+  "asc": `${import.meta.env.BASE_URL}images/icons/asc.svg`,
+  "aho": `${import.meta.env.BASE_URL}images/icons/aho.svg`,
+  "full-led": `${import.meta.env.BASE_URL}images/icons/aho.svg`,  // AHO ≈ Full LED (iluminación automática)
   "vva":        null,                       // sin ícono oficial → SVG inline
 };
 
